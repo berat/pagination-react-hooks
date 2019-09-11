@@ -1,6 +1,10 @@
 {
   "name": "pagination-react-hooks",
+<<<<<<< HEAD
   "version": "1.0.1",
+=======
+  "version": "1.0.2",
+>>>>>>> 1b9836bf58b095ff4c3244ce93707a206431b62d
   "description": "",
   "main": "index.js",
   "scripts": {

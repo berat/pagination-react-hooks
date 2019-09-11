@@ -30,12 +30,12 @@ Add the component to the section you want to show and remember to use the parame
 
 ```js
 import React from 'react';
-import Pagination from './Pagination';
+import Pagination from 'pagination-react-hooks';
 
 const Content = () => {
     const show = (value) => (
         <li className="card">
-            <span>{value.name}</span>         
+            <span>{value.value.name}</span>         
         </li>
     )
     return (
