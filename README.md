@@ -33,8 +33,18 @@ import React from 'react';
 import Pagination from 'pagination-react-hooks';
 
 const Content = () => {
+
+    const posts = [
+        {id : "1", name: "Berat 1"},
+        {id : "2", name: "Berat 2"},
+        {id : "3", name: "Berat 3"},
+        {id : "4", name: "Berat 4"},
+        {id : "5", name: "Berat 5"},
+        {id : "6", name: "Berat 6"},
+    ]
+    
     const show = (value) => (
-        <li className="card">
+        <li key={value.value.id} className="card">
             <span>{value.value.name}</span>         
         </li>
     )
