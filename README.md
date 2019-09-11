@@ -1,5 +1,5 @@
 # Pagination React Hooks
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/berat/pagination-react-hooks/issues) [![npm version](https://badge.fury.io/js/pagination-react-hooks.svg)](https://badge.fury.io/js/pagination-react-hooks)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/berat/pagination-react-hooks/issues) [![npm version](https://badge.fury.io/js/pagination-react-hooks.svg)](https://badge.fury.io/js/pagination-react-hooks) <br>
 [![https://nodei.co/npm/pagination-react-hooks.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/pagination-react-hooks.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/pagination-react-hooks)
 
 > #### Pagination component prepared with React hooks. Load and use.
