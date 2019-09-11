@@ -7,7 +7,7 @@ const App = ( {posts, displayNumber, previousText, nextText, Show} ) => {
 
     const previousTextVariable = previousText ? previousText : "Previous"
     const nextTextVariable = nextText ? nextText : "Next"
-    const transient = posts.slice(0).reverse()
+    const transient = posts
     const fixed = displayNumber ? parseInt(displayNumber) : 5;
     const lastElem = Number(Math.ceil(transient.length / fixed))
 
