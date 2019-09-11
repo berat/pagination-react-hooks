@@ -79,4 +79,4 @@ const App = ( {posts, displayNumber, previousText, nextText, Show} ) => {
     )
 }
 
-export default ReactRateComponent;;
+export default App;;
