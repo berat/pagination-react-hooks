@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import { render } from 'react-dom';
 import './css/main.css';
 
 const App = ( {posts, displayNumber, previousText, nextText, Show} ) => {
@@ -79,4 +78,5 @@ const App = ( {posts, displayNumber, previousText, nextText, Show} ) => {
         </div>
     )
 }
-render(<App />, document.getElementById("root"));
+
+export default ReactRateComponent;;

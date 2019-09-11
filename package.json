@@ -1,8 +1,8 @@
 {
   "name": "pagination-react-hooks",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "",
-  "main": "./dist/index.html",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
