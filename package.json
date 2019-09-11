@@ -1,0 +1,45 @@
+{
+  "name": "pagination-react-hooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berat/pagination-react-hooks.git"
+  },
+  "homepage": "https://github.com/berat/pagination-react-hooks#readme",
+  "bugs": {
+    "url": "https://github.com/berat/pagination-react-hooks/issues"
+  },
+  "keywords": [
+    "pagination",
+    "react",
+    "component",
+    "react-component",
+    "react-hooks",
+    "react-pagination"
+  ],
+  "author": "Berat Bozkurt",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
