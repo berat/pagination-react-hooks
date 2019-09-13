@@ -1,12 +1,12 @@
 import React, { useRef, useState } from 'react';
 import './css/main.css';
 
-const App = ( {posts, displayNumber, previousText, nextText, Show} ) => {
+const App = ( {data, displayNumber, previousText, nextText, Show} ) => {
     const page = useRef();
 
     const previousTextVariable = previousText ? previousText : "Previous"
     const nextTextVariable = nextText ? nextText : "Next"
-    const transient = posts
+    const transient = data
     const fixed = displayNumber ? parseInt(displayNumber) : 5;
     const lastElem = Number(Math.ceil(transient.length / fixed))
 
@@ -62,7 +62,7 @@ const App = ( {posts, displayNumber, previousText, nextText, Show} ) => {
             <ul>
                 {currentPosts.map((value) => (
                     value.map((data) => (
-                        <Show value={data} />
+                        <Show {...data} />
                     ))
                 ))}
             </ul>

@@ -44,13 +44,13 @@ const Content = () => {
     ]
     
     const show = (value) => (
-        <li key={value.value.id} className="card">
-            <span>{value.value.name}</span>         
+        <li key={value.id} className="card">
+            <span>{value.name}</span>         
         </li>
     )
     return (
         <Pagination
-            posts={posts}
+            data={posts}
             Show={show}
             displayNumber="7"
             previousText="Önceki"
