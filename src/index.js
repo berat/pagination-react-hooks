@@ -47,14 +47,7 @@ const App = ( {data, displayNumber, previousText, nextText, Show} ) => {
             setCurrent(parseInt(value))
         }
     }
-
-    const Previous = () => (
-        current != 1 ? <li onClick={clicked}>{previousTextVariable}</li> : null
-    )
-    const Next = () => (
-        current != lastElem ? <li onClick={clicked}>{nextTextVariable}</li> : null
-    )
-
+    
     const currentPosts = list.filter(currentData => currentData.id === current).map(value => value.include)
 
     return (
@@ -67,13 +60,13 @@ const App = ( {data, displayNumber, previousText, nextText, Show} ) => {
                 ))}
             </ul>
             <ul className="sayfalama">
-                <Previous />
+                <li className="previos" id={current!==1 ? "active" : "passive"} onClick={clicked}>{previousTextVariable}</li>
                 {list.map((value) => (
                     value.id !== undefined ?
                         <li class={value.id === current ? "active" : "passive"} onClick={clicked}>{value.id}</li>
                         : null
                 ))}
-                <Next />
+                <li className="next" id={current!== lastElem ? "active" : "passive"} onClick={clicked}>{nextTextVariable}</li>
             </ul>
         </div>
     )
