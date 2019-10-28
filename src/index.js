@@ -18,7 +18,7 @@ const App = ( {data, displayNumber, previousText, nextText, Show} ) => {
     var i = 1,
         j;
     if (fixed <= transient.length) {
-        for (j = 0; j < (transient.length / fixed); j++) {
+        for (j = 0; j < Number(Math.ceil(transient.length / fixed)); j++) {
             list.push(
                 {
                     id: i, include:
