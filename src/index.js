@@ -15,8 +15,8 @@ const App = ( {data, displayNumber, previousText, nextText, Show} ) => {
     const list = [];
     let variable = 0;
 
-    var i = 1,
-        j;
+    var i = 1;
+    var j = 0;
     if (fixed <= transient.length) {
         for (j = 0; j < Number(Math.ceil(transient.length / fixed)); j++) {
             list.push(
@@ -28,6 +28,11 @@ const App = ( {data, displayNumber, previousText, nextText, Show} ) => {
             i += 1;
             variable += fixed
         }
+    }
+    else{
+        list.push({
+            id: 1, include: transient.slice(variable, transient.length)
+        });
     }
 
     const clicked = (e) => {
